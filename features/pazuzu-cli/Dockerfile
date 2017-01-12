@@ -1,5 +1,5 @@
 ENV GOPATH=/usr/GOPATH
-RUN mkdir -p /usr/GOPATH
+RUN mkdir -p $GOPATH
 RUN apt-get update
 RUN apt-get install -y git
 RUN rm -rf /var/lib/apt/lists/*
